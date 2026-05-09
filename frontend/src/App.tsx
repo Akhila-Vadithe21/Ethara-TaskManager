@@ -12,7 +12,7 @@ function App() {
   const handleRegister = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://ethara-taskmanager-backend-1.onrender.com/api/auth/register",
         {
           email,
           password,
@@ -28,7 +28,7 @@ function App() {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:5000/api/auth/login",
+        "https://ethara-taskmanager-backend-1.onrender.com/api/auth/login",
         {
           email,
           password,
